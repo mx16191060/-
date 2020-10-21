@@ -87,3 +87,6 @@ cost time: 74.69691133499146 76.83863496780396
  61  wheelbase                object<br>
  62  width                    object<br>
  63  year                     object<br>
+## 问题1
+在处理数据的时候遇到一个问题是，明明某些列有很多是空的，但是在python里用dataframe.info统计出来并不是空的，就很奇怪，排查之后发现在我的excel表里这些数据看起来是空的值，但其实是一个空格。
+但是用isnull判断是为False的
